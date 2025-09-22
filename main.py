@@ -1,16 +1,16 @@
-# This is a sample Python script.
+# import the datetime module to get the current date/year
+import datetime as dt
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# ask user for their name then welcome them
+user_name = input("What is your name?")
+print("Hello", user_name, "welcome to my program.")
 
+# ask user for their age
+age = int(input("How old are you?"))
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# get the current year using the datetime object that resides in the datetime module
+curr_year = dt.datetime.now().year
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# prepare and display output
+birth_year = curr_year - age
+print("Hmmm... were you born in", birth_year, ".")

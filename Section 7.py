@@ -1,0 +1,16 @@
+import turtle as trtl
+
+painter=trtl.Turtle()
+painter.pensize(5)
+painter.pencolor('red')
+painter.turtlesize(.10)
+painter.speed(speed=3)
+painter.teleport(-400,-400)
+painter.goto(200,200)
+painter.goto(400,0)
+painter.goto(200,200)
+painter.goto(0,400)
+painter.goto(200,200)
+painter.goto(400,400)
+wn = trtl.Screen()
+wn.mainloop()
