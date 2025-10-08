@@ -3,7 +3,7 @@ import turtle as trtl
 painter=trtl.Turtle()
 painter.pensize(5)
 painter.pencolor('red')
-painter.turtlesize(.10)
+painter.turtlesize(.100)
 painter.speed(speed=3)
 painter.teleport(-400,-400)
 painter.goto(200,200)
