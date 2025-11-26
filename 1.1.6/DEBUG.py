@@ -17,15 +17,15 @@ print("z*n=", degree_of_legs_around*leg)
 SPYDER.pensize(5)
 #Draw legs
 radius = 60
-while (leg < num_legs):
+while leg < num_legs:
   SPYDER.goto(0, 20)
   if leg < 4:
     SPYDER.setheading(degree_of_legs_around * leg)
     SPYDER.pendown()
-      SPYDER.circle(radius, 120)
-      SPYDER.penup()
+    SPYDER.circle(radius, 120)
+    SPYDER.penup()
   else:
-      SPYDER.setheading(angle*leg + 90)
+      SPYDER.setheading(radius*leg + 90)
       SPYDER.pendown()
       SPYDER.circle(radius, -120)
       SPYDER.penup()
